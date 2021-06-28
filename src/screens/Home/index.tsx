@@ -4,6 +4,7 @@ import { View, FlatList } from "react-native";
 import { ButtonAdd } from "../../components/ButtonAdd";
 import { CategorySelect } from "../../components/CategorySelect";
 import { Profile } from "../../components/Profile";
+import { Background } from "../../components/Background";
 import { ListHeader } from "../../components/ListHeader";
 import { Appointment } from "../../components/Appointment";
 
@@ -47,7 +48,7 @@ export function Home() {
   }
 
   return (
-    <View>
+    <Background>
       <View style={styles.header}>
         <Profile />
         <ButtonAdd />
@@ -72,6 +73,6 @@ export function Home() {
           />
         </View>
       </View>
-    </View>
+    </Background>
   );
 }
